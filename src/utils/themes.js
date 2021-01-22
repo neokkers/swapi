@@ -40,6 +40,9 @@ const sizes = {
   gridGapM: "2rem",
   gridGapL: "4rem",
   gridGapXL: "6rem",
+  mainPadding: "2rem",
+  borderRadius: "5px",
+  containerWidthLaptop: "1200px",
 };
 
 sizes.defaults = {
@@ -52,7 +55,7 @@ sizes.defaults = {
 
 const utils = {
   fontFamily: `'Montserrat', sans-serif`,
-  borderRadius: "5px",
+
   boxShadow:
     "0px 5px 5px -3px rgba(0,0,0,0.05), 0px 8px 10px 1px rgba(0,0,0,0.02), 0px 3px 14px 2px rgba(0,0,0,0.02)",
 };

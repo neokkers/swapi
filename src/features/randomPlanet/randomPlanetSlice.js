@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { apiService } from "../../utils/apiService";
+import { getResource } from "../../utils/apiService";
 import { getRandomInt } from "../../utils/common";
 
 export const counterSlice = createSlice({
@@ -17,10 +17,15 @@ export const counterSlice = createSlice({
 export const { setRandomPlanet } = counterSlice.actions;
 
 export const fetchRandomPlanet = () => async (dispatch) => {
-  const id = getRandomInt(0, 20);
-  const { data } = await apiService.get(`/planets/${id}`);
+  try {
+    const id = getRandomInt(0, 2000000);
+    const data = await getResource(`/planets/${id}`);
 
-  dispatch(setRandomPlanet(data));
+    dispatch(setRandomPlanet(data));
+  } catch (e) {
+    // throw new Error("wefew");
+    console.error(e);
+  }
 };
 
 export const selectRandomPlanet = (state) => state.randomPlanet.data;
