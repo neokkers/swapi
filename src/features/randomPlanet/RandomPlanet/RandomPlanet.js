@@ -3,7 +3,8 @@ import styled from "styled-components/macro";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRandomPlanet, selectRandomPlanet } from "../randomPlanetSlice";
 import { Image } from "../../_reusable/Image/Image";
-import { getVisualGuideImageRoute } from "../spec";
+import { getVisualGuideImageRoute } from "../specs";
+import { VISUAL_GUIDE_IMAGE_PATH } from "../../../utils/constants";
 
 export const RandomPlanet = styled(({ className, delay = 5000 }) => {
   const dispatch = useDispatch();
@@ -24,9 +25,7 @@ export const RandomPlanet = styled(({ className, delay = 5000 }) => {
   return (
     <div className={className}>
       <div className="img">
-        <Image
-          src={`https://starwars-visualguide.com/assets/img/${visualGuideRoute}`}
-        />
+        <Image src={`${VISUAL_GUIDE_IMAGE_PATH}${visualGuideRoute}`} />
       </div>
     </div>
   );
