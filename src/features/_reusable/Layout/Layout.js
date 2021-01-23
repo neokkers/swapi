@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { RandomPlanet } from "../../randomPlanet/RandomPlanet/RandomPlanet";
-import { Container } from "../../_reusable/Container/Container";
-import { Box } from "../../_reusable/Box/Box";
+import { Container } from "../Container/Container";
+import { Box } from "../Box/Box";
 
 export const Layout = styled(({ className, leftComponent, rightComponent }) => {
   return (

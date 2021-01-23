@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="206988aa-8ff2-4a4b-a29a-9cd7eaa75a19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/_reusable/Box/Box.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/_reusable/FlexBlock/FlexBlock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/_reusable/RenderError/RenderError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/randomPlanet/RandomPlanetLoader/RandomPlanetLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/_reusable/ItemList/ItemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/_reusable/ItemList/ItemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/_reusable/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/_reusable/Title/Title.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/layout/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/layout/Layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/randomPlanet/RandomPlanet/RandomPlanet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/randomPlanet/RandomPlanet/RandomPlanet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/randomPlanet/randomPlanetSlice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/randomPlanet/randomPlanetSlice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/apiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/apiService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/themes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/themes.js" afterDir="false" />
-    </list>
+    <list default="true" id="206988aa-8ff2-4a4b-a29a-9cd7eaa75a19" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611319907771</updated>
-      <workItem from="1611319909868" duration="14327000" />
+      <workItem from="1611319909868" duration="14434000" />
     </task>
     <task id="LOCAL-00001" summary="base">
       <created>1611321221020</created>
@@ -113,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611407935943</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="RandomPlanet.js">
+      <created>1611411324220</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611411324220</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,7 +1,7 @@
 import React from "react";
 import { GlobalStyle } from "./utils/Global";
 import styled from "styled-components/macro";
-import { Layout } from "./features/layout/Layout/Layout";
+import { Layout } from "./features/_reusable/Layout/Layout";
 import { ItemList } from "./features/_reusable/ItemList/ItemList";
 
 const App = styled(({ className }) => {
