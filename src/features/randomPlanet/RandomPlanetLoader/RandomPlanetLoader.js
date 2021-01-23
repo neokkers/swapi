@@ -9,7 +9,7 @@ import { FlexBlockWithImage } from "../../_reusable/FlexBlock/FlexBlock";
 
 export const RandomPlanetLoader = styled(({ className }) => {
   return (
-    <Box className={className}>
+    <Box className={className} role={"loader"}>
       <FlexBlockWithImage
         src={RANDOM_PLANET_LOADER_IMAGE}
         imgW={RANDOM_PLANET_IMAGE_SIZE}

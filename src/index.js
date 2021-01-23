@@ -9,7 +9,7 @@ import { ThemeProvider } from "styled-components";
 import { MuiTheme } from "./utils/MuiTheme";
 import { lightTheme } from "./utils/themes";
 
-const Root = () => {
+export const Root = () => {
   // const theme = useSelector(selectTheme);
 
   return (

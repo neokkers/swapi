@@ -30,6 +30,11 @@ export const fetchRandomPlanet = () => async (dispatch) => {
     getResource(`/planets/${randomInt}`)
   );
 };
+export const fetchPlanet = (id) => async (dispatch) => {
+  await fetchingConnector(dispatch, setRandomPlanet, setError, setLoading, () =>
+    getResource(`/planets/${id}`)
+  );
+};
 
 export const selectRandomPlanet = (state) => state.randomPlanet;
 

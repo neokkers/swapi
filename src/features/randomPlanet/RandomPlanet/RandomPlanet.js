@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import styled from "styled-components/macro";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRandomPlanet, selectRandomPlanet } from "../randomPlanetSlice";
+import {
+  fetchPlanet,
+  // fetchRandomPlanet,
+  selectRandomPlanet,
+} from "../randomPlanetSlice";
 import { getVisualGuideImageRoute } from "../specs";
 import {
   RANDOM_PLANET_IMAGE_SIZE,
@@ -13,23 +17,28 @@ import { RandomPlanetLoader } from "../RandomPlanetLoader/RandomPlanetLoader";
 import { FlexBlockWithImage } from "../../_reusable/FlexBlock/FlexBlock";
 import { Title } from "../../_reusable/Title/Title";
 import { ItemList } from "../../_reusable/ItemList/ItemList";
+import { getRandomInt } from "../../../utils/common";
 
-export const RandomPlanet = styled(({ className, delay = 5000 }) => {
+export const RandomPlanet = styled(({ className, delay = 5000, planetId }) => {
   const dispatch = useDispatch();
   const { data, loading, error } = useSelector(selectRandomPlanet);
 
   useEffect(() => {
     let i;
+
+    const fetchPlanetF = async () =>
+      dispatch(fetchPlanet(planetId || getRandomInt(0, 20)));
+
     const f = async () => {
-      await dispatch(fetchRandomPlanet());
-      i = setInterval(() => dispatch(fetchRandomPlanet()), delay);
+      await fetchPlanetF();
+      i = setInterval(() => fetchPlanetF(), delay);
     };
     f();
 
     return () => {
       clearInterval(i);
     };
-  }, [delay, dispatch]);
+  }, [delay, dispatch, planetId]);
 
   if (!data || loading) return <RandomPlanetLoader />;
   if (error) return <RenderError name={"Random planet"} />;
