@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { RandomPlanet } from "../../randomPlanet/RandomPlanet/RandomPlanet";
 import { Container } from "../../_reusable/Container/Container";
+import { Box } from "../../_reusable/Box/Box";
 
 export const Layout = styled(({ className, leftComponent, rightComponent }) => {
   return (
@@ -9,8 +10,8 @@ export const Layout = styled(({ className, leftComponent, rightComponent }) => {
       <Container>
         <RandomPlanet />
         <div className="flex-wrapper">
-          <div className="left">{leftComponent}</div>
-          <div className="right">{rightComponent}</div>
+          <Box>{leftComponent}</Box>
+          <Box>{rightComponent}</Box>
         </div>
         <div>wekfm</div>
       </Container>
@@ -37,8 +38,6 @@ export const Layout = styled(({ className, leftComponent, rightComponent }) => {
 
       margin: 0 -${(p) => p.theme.sizes.mainPadding} 0 0;
       > * {
-        //padding: ${(p) => p.theme.sizes.mainPadding};
-        background: ${(p) => p.theme.colors.bgGray};
         margin: 0 ${(p) => p.theme.sizes.mainPadding}
           ${(p) => p.theme.sizes.mainPadding} 0;
         flex: 1;

@@ -40,7 +40,7 @@ const sizes = {
   gridGapM: "2rem",
   gridGapL: "4rem",
   gridGapXL: "6rem",
-  mainPadding: "2rem",
+  mainPadding: "1rem",
   borderRadius: "5px",
   containerWidthLaptop: "1200px",
 };

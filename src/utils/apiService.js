@@ -38,10 +38,11 @@ export const fetchingConnector = async (
     const r = await fetch();
     console.log(r);
     dispatch(setData(r));
+    dispatch(setError(null));
   } catch (e) {
     dispatch(setError(e.message));
     dispatch(setLoading(false));
-    throw new Error(e.message);
+    // throw new Error(e.message);
   }
   dispatch(setLoading(false));
 };

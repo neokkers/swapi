@@ -6,3 +6,6 @@ export const SERVER_ERROR_MSG = "Api service error";
 // RandomPlanet
 export const VISUAL_GUIDE_IMAGE_PATH =
   "https://starwars-visualguide.com/assets/img/";
+export const RANDOM_PLANET_LOADER_IMAGE =
+  "https://cdn.dribbble.com/users/2346349/screenshots/9246147/loading.gif";
+export const RANDOM_PLANET_IMAGE_SIZE = "170px";

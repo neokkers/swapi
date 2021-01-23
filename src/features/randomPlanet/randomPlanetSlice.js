@@ -7,7 +7,7 @@ export const counterSlice = createSlice({
   initialState: {
     data: null,
     loading: false,
-    error: false,
+    error: null,
   },
   reducers: {
     setRandomPlanet: (state, action) => {
