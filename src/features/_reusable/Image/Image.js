@@ -10,9 +10,9 @@ export const Image = styled(({ className, src, alt }) => {
 })`
   width: ${(p) => p.width || "100px"};
   height: ${(p) => p.height || "100px"};
-  border-radius: 10px;
-  overflow: ${(p) => p.sizes.borderRadius};
-  background: ${(p) => p.colors.bgGray};
+  border-radius: ${(p) => p.theme.sizes.borderRadius};
+  overflow: hidden;
+  background: ${(p) => p.theme.colors.bgGray};
   img {
     width: 100%;
     height: 100%;
