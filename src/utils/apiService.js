@@ -37,12 +37,14 @@ export const fetchingConnector = async (
   try {
     const r = await fetch();
     console.log(r);
-    dispatch(setData(r));
     dispatch(setError(null));
+    dispatch(setData(r));
   } catch (e) {
     dispatch(setError(e.message));
     dispatch(setLoading(false));
-    // throw new Error(e.message);
   }
   dispatch(setLoading(false));
+
+  // resetting the error for interval fetching modules
+  dispatch(setError(null));
 };
