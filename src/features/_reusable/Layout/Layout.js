@@ -3,16 +3,18 @@ import styled from "styled-components/macro";
 import { RandomPlanet } from "../../randomPlanet/RandomPlanet/RandomPlanet";
 import { Container } from "../Container/Container";
 import { Box } from "../Box/Box";
-import { ErrorBoundary } from "../../errorHandlers/ErrorBoundary/ErrorBoundary";
+import { ErrorBoundary } from "../ErrorBoundary/ErrorBoundary";
+import { RenderError } from "../RenderError/RenderError";
+import {
+  RandomPlanetContainer,
+  RandomPlanetContainerHandled,
+} from "../../randomPlanet/RandomPlanetContainer/RandomPlanetContainer";
 
 export const Layout = styled(({ className, leftComponent, rightComponent }) => {
   return (
     <div className={className}>
       <Container>
-        <ErrorBoundary FallbackComponent={() => <h1>Something went wrong.</h1>}>
-          <RandomPlanet />
-        </ErrorBoundary>
-
+        <RandomPlanetContainerHandled />
         <div className="flex-wrapper">
           <Box>{leftComponent}</Box>
           <Box>{rightComponent}</Box>
