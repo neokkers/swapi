@@ -40,6 +40,8 @@ export const RandomPlanet = styled(({ className, delay = 5000, planetId }) => {
     };
   }, [delay, dispatch, planetId]);
 
+  // throw new Error();
+
   if (!data || loading) return <RandomPlanetLoader />;
   if (error) return <RenderError name={"Random planet"} />;
 
